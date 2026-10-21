@@ -39,7 +39,8 @@ nav .links a:hover{color:var(--texto)}
 @keyframes respira{50%{filter:drop-shadow(0 0 46px #818cf888)}}
 .hero h1{font-family:Syncopate,sans-serif;font-weight:700;font-size:clamp(34px,7vw,84px);letter-spacing:.18em;line-height:1.05;margin-top:6px}
 .hero h1 b{background:linear-gradient(120deg,var(--cian),var(--violeta),var(--rosa));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero .lema{font-family:Syncopate,sans-serif;font-size:clamp(11px,1.4vw,14px);letter-spacing:.6em;color:var(--violeta);padding-left:.6em}
+.hero h1 .music{display:block;font-size:.34em;letter-spacing:.95em;padding-left:.95em;margin-top:.5em;color:var(--violeta);font-weight:400}
+.hero .lema{font-size:clamp(11px,1.2vw,13px);letter-spacing:.5em;color:var(--suave);padding-left:.5em;text-transform:uppercase}
 .hero p.gancho{max-width:620px;color:var(--suave);font-size:clamp(15px,1.7vw,18px)}
 .botones{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:8px}
 .boton{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.06em;background:linear-gradient(120deg,var(--cian),var(--violeta) 55%,var(--rosa));color:#05060c;box-shadow:0 10px 40px -12px #818cf8aa;transition:transform .2s,box-shadow .2s}
@@ -56,7 +57,9 @@ section{padding:clamp(70px,10vw,130px) clamp(16px,5vw,64px);max-width:1240px;mar
 .titulo h2{font-size:clamp(28px,4vw,46px);font-weight:700;letter-spacing:-.01em;line-height:1.1}
 .titulo p{color:var(--suave);max-width:420px}
 /* lanzamientos */
-.discos{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px}
+.discos{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+@media (max-width:1100px){.discos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.discos{grid-template-columns:repeat(2,1fr);gap:14px}}
 .disco{position:relative;border-radius:18px;overflow:hidden;background:var(--panel);border:1px solid var(--linea);transition:transform .35s,border-color .35s}
 .disco:hover{transform:translateY(-6px);border-color:#818cf866}
 .disco .arte{position:relative;aspect-ratio:1;overflow:hidden}
@@ -117,8 +120,8 @@ footer{border-top:1px solid var(--linea);padding:46px clamp(16px,5vw,64px) 36px}
           <circle r="13" fill="#F472B6" stroke="none"><animateMotion dur="9s" repeatCount="indefinite" path="M205,0 A205,44 0 1 1 -205,0 A205,44 0 1 1 205,0"/></circle></g>
       </g>
     </svg>
-    <h1>CORE<b>X</b></h1>
-    <div class="lema">ELECTRONIC MUSIC</div>
+    <h1>CORE<b>X</b><span class="music">MUSIC</span></h1>
+    <div class="lema">ELECTRONIC MUSIC LABEL</div>
     <p class="gancho">Sello de música electrónica: melodic techno, house melódico y narrativos. Cada lanzamiento con su propio visual. Música creada con IA y dirección humana. 🪐</p>
     <div class="botones">
     <a class="boton" href="https://www.youtube.com/@corex.music" rel="noopener">Ver en YouTube</a>
